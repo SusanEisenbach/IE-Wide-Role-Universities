@@ -1,0 +1,35 @@
+\documentclass[11pt]{amsart}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{a4paper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{The Wide Role of Informatics at Universities}
+\author{The Author}
+%\date{}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+\section{Introduction}
+
+In the 1970s with the advent of the personal computer we entered into the Digital or Information Age. However it has only been in this century with the ubiquity of the internet, the smartphone, and the internet of things that digital has become truly pervasive. How do universities respond to this massive change? Informatics Europe established in 2018 a new working group to investigate what universities are doing to ensure that non-informatics teaching and research is informed by best practice in Informatics.
+
+
+To better understand the state of affairs on this topic and discover best practices at European Universities, the working group conducted an online survey. We invited heads and members of Academic Informatics/Computer Science/IT Departments (Schools, Faculties, Institutes) to complete a questionnaire which can be seen in the Appendix~\ref{appendix}. The questionnaire was filled out autumn 2018. XX universities from YY countries filled it out - expand.
+
+How Informatics (also called Computer Science or Computing) should position itself in a university is a political decision. The extremes we could imagine range from primarily being a service department to primarily being a research area that is isolated from other departments.
+
+%\subsection{}
+
+\input{research}
+\input{teaching}
+\input{people}
+\input{data}
+\input{structure}
+\input{appendix.tex}
+
+\end{document}  
