@@ -6,6 +6,8 @@
 \usepackage{graphicx}
 \usepackage{amssymb}
 \usepackage{epstopdf}
+\usepackage{caption}
+\usepackage{subcaption}
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 
 \title{The Wide Role of Informatics at Universities}
@@ -18,16 +20,34 @@
 
 In the 1970s with the advent of the personal computer we entered into the Digital or Information Age. However it has only been in this century with the ubiquity of the internet, the smartphone, and the internet of things that digital has become truly pervasive. How do universities respond to this massive change? Informatics Europe established in 2018 a new working group to investigate what universities are doing to ensure that non-informatics teaching and research is informed by best practice in Informatics.
 
-To better understand the state of affairs on this topic and discover best practices at European Universities, the working group conducted an online survey. We invited heads and members of Informatics/Computer Science/IT Departments (Schools, Faculties, Institutes) to complete a questionnaire. The request to fill out our survey was sent to all Informatics Europe members and it was also publicly available from the Informatics Europe website. The questionnaire was filled out autumn 2018. Forty eight universities (almost all IE members) from eighteen countries filled it out. The list of participants is in table~\ref{tab:unis}.
+To better understand the state of affairs on this topic and discover best practices at European Universities, the working group conducted an online survey. We invited heads and members of Informatics/Computer Science/IT Departments (Schools, Faculties, Institutes) to complete a questionnaire in autumn 2018. The request to fill out our survey was sent to all Informatics Europe members and it was also publicly available from the Informatics Europe website.  For the location of the respondents see Figure~\ref{fig:mapandmembers}.  Forty eight universities from eighteen countries filled it out (see Table~\ref{tab:names} for the list).
+
+\begin{figure}[h]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{charts/map.jpg}
+  \caption{Countries}
+  \label{fig:map}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=1.5\linewidth]{charts/regions.jpg}
+   % \includegraphics[width=.5\linewidth]{charts/regions.jpg}
+  \caption{Regions}
+  \label{fig:members}
+\end{subfigure}
+\caption{Location of Respondents}
+\label{fig:mapandmembers}
+\end{figure}
 
 Our survey was wide ranging. We wanted to understand how universities valued interdisciplinary research, about teaching Informatics to non-specialist students, what happens i n practice with hiring and supporting interdisciplinary academics. We wanted to know about how Data Science in particular fits into universities and finally the structures in place to support interdisciplinary work. The survey questions are in Appendix~\ref{appendix}. 
 
-How Informatics (also called Computer Science or Computing) should position itself in a university is a political decision. The extremes we could imagine range from primarily being a service department to primarily being a research area that is isolated from other departments.
+How Informatics (also called Computer Science or Computing) should position itself in a university is a political decision. The extremes range from primarily being a service department to being primarily a research area that is isolated from other departments.
 
 
 \begin{table}
 \begin{center}
-\label{tab:unis}
 \begin{tabular}  {|r|l|l|}
 \hline
 &{\bf Country} & {\bf University}\\
@@ -53,38 +73,38 @@ How Informatics (also called Computer Science or Computing) should position itse
 &  &  Paderborn University\\
 &  & University of Stuttgart \\
 \hline
-8.&Hungary   &   E\" otv\"os Loránd University\\
+8.&Hungary   &   E\" otv\"os Lor\'and University\\
 \hline
 9.&Ireland  &  Technological University Dublin\\
 \hline
 10.&Italy   & University of Bari Aldo Moro\\
  &  &  Universit\` a di Torino\\
  & & Alma Mater Studiorum - Università di Bologna \\
- & & Universit\` a degli Studi di Milano \\
+ & & *Universit\` a degli Studi di Milano \\
 &  & Politecnico di Milano \\
 & & Universit\` a Roma Tre \\
 &  &  Universit\` a degli Studi di Milano-Bicocca\\
-&  & Universit\` a degli studi ``G. d' Annunzio'' Chieti Pescara \\
+&  & *Universit\` a degli Studi ``G. d' Annunzio'' Chieti Pescara \\
 \hline
 11.&Latvia   & University of Latvia\\
 &  & Transport and Telecommunication University \\
 \hline
 12.&Netherlands  &  Delft University of Technology\\
-& & Tilburg University \\   
+& & *Tilburg University \\   
 & &  Utrecht University \\
  \hline
 13.& Portugal  & Universidade Nova de Lisboa \\
  \hline
 14.&Romania  & Babes-Bolyai Univ. Cluj-Napoca \\
 \hline
-15.&Spain  & University of Almeria \\
+15.&Spain  & *University of Almeria \\
 &  & Universitat Politecnica de Catalunya \\
-&  &  University of Extremadura\\
-&  &  University Jaume I\\
-&    & University of M\' alaga \\
-&  &  Complutense University of Madrid\\
-&  &  University Oviedo\\
-&  & Universidad de Valladolid \\
+&  &  *University of Extremadura\\
+&  &  *University Jaume I\\
+&    & *University of M\' alaga \\
+&  &  *Complutense University of Madrid\\
+&  &  *University Oviedo\\
+&  & *Universidad de Valladolid \\
 \hline
 16.& Sweden   &  Chalmers | Gothenburg University\\
 \hline
@@ -100,29 +120,11 @@ How Informatics (also called Computer Science or Computing) should position itse
 &  & University of Oxford \\
 \hline
 \end{tabular}
-\caption{Participating Universities}
+\vspace*{0.4cm}
 \end{center}
+\caption{Participating Universities -- non IE members are marked with (*)}
+\label{tab:names}
 \end{table}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-%\subsection{}
 
 \input{research}
 \input{teaching}
